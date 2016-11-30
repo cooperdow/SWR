@@ -1,0 +1,9 @@
+<div style="background-color: #851414; color: #9C9A99" class="jumbotron text-center">
+	<h1>$ On Sale $</h1>
+</div>
+	<div class="text-center col-lg-6" ng-repeat="sale in onsale">
+        <img ng-src="{{sale.image}}">
+        <h3>{{sale.name}}</h3>
+        <h4>{{sale.cost}}</h4>
+        <p>{{sale.description}}</p>
+    </div>
