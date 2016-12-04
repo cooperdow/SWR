@@ -1,13 +1,27 @@
-<div  style="background-color: #851414; color: #9C9A99" class="jumbotron text-center">
+<style>
+.solid {border-style: solid; border-width:1px; color:#9C9A99; background-color:#851414;}
+</style>
+
+<div style="background-color: #851414">
+<div style="background-color: #851414; color: #9C9A99; border-bottom-style: solid; border-width:1px;" class="jumbotron text-center">
+
     <h1>Summer Winter Retailer</h1>
 </div>
 <div class="text-center">
-<h2 style="color: red">Upcoming Expeditions</h2>
-<div class="panel" ng-repeat="expedition in images">
-    
-    <h4>{{expedition.expedition}}</h4>
-    <h4>{{expedition.days}}</h4>
-    <img ng-src="{{expedition.image}}">
+<h2 style="color:#9C9A99; background-color:#851414;">Meet your "Camping Friends"</h2>
+<br>
+
+  <div class="text-center col-lg-6 solid" ng-repeat="guides in images">   
+    <h4>{{guides.name}}</h4>
+    <img ng-src="{{guides.image}}" style="width:400px;height:600px;">
+    <h4><u>Personal Bio:</u> {{guides.bio}}</h4>
+   
+        </div>
+      </div>
+    </div>
+  
+    <br>
     <br>
     </div>
+</div>
 </div>
