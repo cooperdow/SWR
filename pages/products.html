@@ -1,0 +1,9 @@
+<div style="background-color: #851414; color: #9C9A99" class="jumbotron text-center">
+	<h1>$ Our Products $</h1>
+</div>
+	<div class="text-center col-lg-6" ng-repeat="item in products">
+        <img ng-src="{{sale.image}}" style="width:35%;height=35%;">
+        <h3>{{item.name}}</h3>
+        <h4>{{item.cost}}</h4>
+        <p>{{item.description}}</p>
+    </div>
