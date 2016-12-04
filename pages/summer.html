@@ -1,9 +1,20 @@
-<div style="background-color: #851414; color: #9C9A99" class="jumbotron text-center">
-	<h1 >Summer Equipment</h1>
+<style>
+.solid {border-style: solid; border-width:1px; color:#9C9A99; background-color:#851414;}
+.stolid {border-bottom-style: solid; border-width: 1px; color:#9C9A99; background-color:#851414;}
+</style>
+<div style="background-color: #851414">
+<div style="background-color: #851414; color: #9C9A99" class="jumbotron text-center stolid">
+	<h1 >Summer Expeditions</h1>
 </div>
-	<div class="text-center col-lg-6" ng-repeat="sumner in summer">
-        <img ng-src="{{sumner.image}}">
+<div class="text-center">
+<a class="btn-lg btn-info" href="https://docs.google.com/spreadsheets/d/1mk1WBFkxV24O20odLgYyYyqY-as2LNI33xcDMp5cunA/edit?usp=sharing">Trip Sign-Up</a>
+<br><br>
+</div>
+	<div class="text-center col-lg-6 solid" ng-repeat="sumner in summer">
+	<br>
+        <img ng-src="{{sumner.image}}" style="width:35%;height:35%;">
         <h3>{{sumner.name}}</h3>
         <h4>{{sumner.cost}}</h4>
         <p>{{sumner.description}}</p>
+    </div>
     </div>
